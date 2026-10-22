@@ -1,0 +1,13 @@
+name = "vacancy-auditor"
+main = "src/worker.ts"
+compatibility_date = "2026-10-22"
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[vars]
+# Не помещайте ключ DeepSeek сюда: добавьте его командой `wrangler secret put DEEPSEEK_API_KEY`.
+DEEPSEEK_MODEL = "deepseek-chat"
+MAX_MAKLER_PAGES = "10"
+STALE_AFTER_DAYS = "12"

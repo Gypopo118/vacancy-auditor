@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1325" />
+    <title>Проверка вакансий</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="title">
+        <p class="eyebrow">JOB HI-TECH × MAKLER</p>
+        <h1 id="title">Проверка вакансий</h1>
+        <p class="lead">Сервис прочитает все открытые вакансии на Job и Makler, сверит их и покажет замечания редактора.</p>
+        <button id="start" class="start-button" type="button">Начать проверку вакансий</button>
+        <p id="status" class="status" aria-live="polite">Готов к запуску</p>
+      </section>
+      <section class="result" aria-live="polite" aria-label="Результат проверки">
+        <div id="empty" class="empty-state">Здесь появится структурированный отчёт.</div>
+        <div id="loading" class="loading" hidden>
+          <span class="spinner" aria-hidden="true"></span>
+          <div><strong>Проверяем вакансии…</strong><p>Открываем объявления на обоих сайтах и передаём данные на анализ.</p></div>
+        </div>
+        <div id="report" hidden></div>
+      </section>
+    </main>
+    <footer>Проверяются только публично доступные объявления. Результат не сохраняется.</footer>
+    <script src="/app.js" defer></script>
+  </body>
+</html>

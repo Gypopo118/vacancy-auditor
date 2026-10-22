@@ -1,0 +1,16 @@
+{
+  "name": "vacancy-auditor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Проверка вакансий Job HI-TECH и Makler с анализом DeepSeek",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261022.1",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.151.3"
+  }
+}
